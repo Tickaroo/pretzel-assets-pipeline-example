@@ -1,7 +1,19 @@
-p asfd
+html
+  head
+    link(href="http://localhost:3006/build/stylesheets/test.css" media="all" rel="stylesheet")
+    link(href="http://localhost:3006/build/stylesheets/foo.css" media="all" rel="stylesheet")
+    link(href="http://localhost:3006/build/stylesheets/roo/foo.css" media="all" rel="stylesheet")
+    script(src="/build/dll/vendor.js")
+    script(src="/build/dll/vendor_chart.js")
+    script(src="http://localhost:3006/build/entries/r.js")
+    script(src="http://localhost:3006/build/entries/x.js")
+    script(src="http://localhost:3006/build/entries/asdf/test.js")
+
+  body
+    p asfd
 
 
-div
-  include xr
+    div
+      include xr
 
-include /node_modules/skater/templates/test.pug
+    include /node_modules/dummyroo/templates/test.pug

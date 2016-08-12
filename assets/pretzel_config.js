@@ -20,10 +20,11 @@ module.exports = require('pretzel-assets-pipeline')({
   publicFileDirecories: [
     path.resolve(__dirname, '../components'),
     path.resolve(__dirname, '../app'),
-    path.resolve(__dirname, '../node_modules/skater')
+    path.resolve(__dirname, '../node_modules/dummyroo')
   ],
   dev: {
-    port: 3005
+    port: 3006,
+    sourceMap: 'cheap-module-source-map'
   },
   path: {
     src: path.resolve(__dirname, './'),

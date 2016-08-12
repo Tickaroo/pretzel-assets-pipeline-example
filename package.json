@@ -1,14 +1,13 @@
 {
-  "name": "pretzel-assets-test-example",
+  "name": "pretzel-assets-pipeline-example",
   "version": "0.0.1",
   "description": "This is a simple usage example for pretzel-assets-pipeline module.",
   "scripts": {
-
+    "s": "nf start",
     "assets:server:dev": "node ./assets/pretzel_server.js",
     "assets:clean": "grunt clean:pretzel --stack",
     "assets:build:dll": "grunt webpack:pretzel-dll --stack",
     "assets:build:all": "grunt pretzel-build-assets --stack --hashedName=true",
-
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Anton Pawlik <anton.pawlik@gmail.com> (http://antpaw.org)",
@@ -23,8 +22,9 @@
   },
   "devDependencies": {
     "coffee-loader": "^0.7.2",
+    "foreman": "^1.4.1",
     "grunt": "^1.0.1",
-    "pretzel-assets-pipeline": "^0.0.1",
+    "pretzel-assets-pipeline": "^0.1.0",
     "pug-loader": "^2.2.1"
   }
 }
