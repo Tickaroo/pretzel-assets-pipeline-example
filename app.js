@@ -7,7 +7,7 @@ app.set('view engine', 'pug');
 app.locals.basedir = __dirname;
 
 app.get('/', function (req, res) {
-  res.render('blub', { });
+  res.render('blub', { test: 'my var' });
 });
 app.get('/production', function (req, res) {
   res.render('production', { });

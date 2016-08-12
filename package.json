@@ -24,7 +24,7 @@
     "coffee-loader": "^0.7.2",
     "foreman": "^1.4.1",
     "grunt": "^1.0.1",
-    "pretzel-assets-pipeline": "^0.1.0",
+    "pretzel-assets-pipeline": "Tickaroo/pretzel-assets-pipeline",
     "pug-loader": "^2.2.1"
   }
 }

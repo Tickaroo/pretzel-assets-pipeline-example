@@ -1,4 +1,11 @@
-html
+extends ./index
+
+append locals
+  - var test = 500
+
+
+block body
+
   head
     link(href="http://localhost:3006/build/stylesheets/test.css" media="all" rel="stylesheet")
     link(href="http://localhost:3006/build/stylesheets/foo.css" media="all" rel="stylesheet")
@@ -10,10 +17,12 @@ html
     script(src="http://localhost:3006/build/entries/asdf/test.js")
 
   body
-    p asfd
+    p main template rendered on server
+    
+
+    include isomorphic_template
 
 
-    div
-      include xr
+    button#button button
 
     include /node_modules/dummyroo/templates/test.pug
