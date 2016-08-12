@@ -7,7 +7,7 @@ To start dev mode run:
 ```
 $ npm run assets:build:dll # only if you did not compile dll before
 $ npm run s
-# open http://tickaroo.local:5000/
+# open http://localhost:5000/
 ```
 
 To compile for `production`:
