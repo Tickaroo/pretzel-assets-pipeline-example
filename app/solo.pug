@@ -8,18 +8,13 @@ block body
 
   head
     link(href=serverAssets.css('test') media="all" rel="stylesheet")
-    link(href=serverAssets.css('foo') media="all" rel="stylesheet")
-    link(href=serverAssets.css('roo/foo') media="all" rel="stylesheet")
     script(src=serverAssets.dll('vendor'))
     script(src=serverAssets.dll('vendor_chart'))
     script(src=serverAssets.js('r'))
-    script(src=serverAssets.js('x'))
-    script(src=serverAssets.js('asdf/test'))
+
 
   body
     p main template rendered on server
-    p= assets.file('x.txt')
-    p= assets.image('asdf.txt')
     
     h3= profile
     

@@ -24,6 +24,7 @@ module.exports = require('pretzel-assets-pipeline')({
   ],
   dev: {
     port: 3006,
+    noLog: false,
     sourceMap: 'cheap-module-source-map'
   },
   path: {
